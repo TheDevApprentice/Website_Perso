@@ -41,9 +41,10 @@
     max-width: 95%;
     margin: 0 auto;
   }
+
   @media (min-width: 1440px) {
     .container {
-      max-width: 1440px;
+      min-width: 1440px;
     }
   }
   .containerTxt {
@@ -320,8 +321,6 @@
   }
   /* ABOUT SECTION */
   .interactive {
-    margin-top: 0.5rem;
-    height: 100vh;
     display: grid;
     grid-template-rows: auto auto auto;
 
