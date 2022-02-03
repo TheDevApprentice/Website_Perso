@@ -242,6 +242,8 @@
   }
   header nav .main-menu {
     display: none;
+    position: relative;
+    right: -25px;
   }
   @media (min-width: 768px) {
     header nav .main-menu {
@@ -318,7 +320,8 @@
   }
   /* ABOUT SECTION */
   .interactive {
-    margin-top: 8rem;
+    margin-top: 0.5rem;
+    height: 100vh;
     display: grid;
     grid-template-rows: auto auto auto;
 
