@@ -20,6 +20,8 @@
     background-color: white;
     color: black;
     font-weight: 400;
+    height: 100%;
+    width: 100%;
   }
   /* TEXT */
   a, a:visited, a:hover {
@@ -40,6 +42,7 @@
   .container {
     max-width: 95%;
     margin: 0 auto;
+  
   }
 
   @media (min-width: 1440px) {
@@ -314,18 +317,19 @@
   /* SERVICES */
   .about{
     justify-content: center;
+    align-content: center;
     display: grid;
     
-    height: max-content;
+    height: 100%;
     width: 100%;
   }
   /* ABOUT SECTION */
   .interactive {
     display: grid;
     grid-template-columns: auto 70% ;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto 90%;
     padding: 2rem;
-
+    align-self: center;
   
   }
   @media (min-width: 768px) {
@@ -368,6 +372,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   
   }
   @media (min-width: 768px) {
     .interactive-txt {
@@ -378,11 +383,16 @@
   }
   .interactive-txt h2 {
     margin-bottom: 2rem;
-    font-size: 3rem;
+    font-size: 4rem;
+    font-weight: 500;
+
   }
   .interactive-txt p {
     color: #8c8c8c;
     max-width: 80%;
+    font-size: 1.9rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.15rem;
   }
   @media (min-width: 768px) {
     .interactive-txt p {
@@ -390,13 +400,17 @@
     }
   }
   /* OUR CREATIONS SECTION */
+
   .creations {
     margin-top: 8rem;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     gap: 2rem;
+    height: auto;
+    width: 100%;
   }
+
   @media (min-width: 768px) {
     .creations {
       gap: 3rem;
@@ -412,7 +426,7 @@
   @media (min-width: 768px) {
     .creations h2 {
       text-align: left;
-      grid-row: 1;
+      grid-row: auto;
       grid-column: 1/ span 3;
     }
   }
@@ -431,7 +445,7 @@
     margin: 0 auto;
     grid-row: 10;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 800px) {
     .creations button {
       justify-self: end;
       grid-row: 1;
@@ -486,67 +500,132 @@
     color: black;
   }
   .creations-deepearth {
-    background-image: url(https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/mobile/image-deep-earth.jpg);
+    background-image: url();
   }
   @media (min-width: 768px) {
     .creations-deepearth {
-      background-image: url(https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/desktop/image-deep-earth.jpg);
+      background-image: url();
     }
   }
   .creations-nightarcade {
-    background-image: url(https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/mobile/image-night-arcade.jpg);
+    background-image: url();
   }
   @media (min-width: 768px) {
     .creations-nightarcade {
-      background-image: url(https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/desktop/image-night-arcade.jpg);
+      background-image: url();
     }
   }
   .creations-soccerteam {
-    background-image: url(https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/mobile/image-soccer-team.jpg);
+    background-image: url();
   }
   @media (min-width: 768px) {
     .creations-soccerteam {
-      background-image: url(https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/desktop/image-soccer-team.jpg);
+      background-image: url();
     }
   }
   .creations-thegrid {
-    background-image: url(https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/mobile/image-grid.jpg);
+    background-image: url();
   }
   @media (min-width: 768px) {
     .creations-thegrid {
-      background-image: url(https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/desktop/image-grid.jpg);
+      background-image: url();
     }
   }
   .creations-fromup {
-    background-image: url(https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/mobile/image-from-above.jpg);
+    background-image: url();
   }
   @media (min-width: 768px) {
     .creations-fromup {
-      background-image: url(https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/desktop/image-from-above.jpg);
+      background-image: url();
     }
   }
   .creations-pocketborealis {
-    background-image: url(https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/mobile/image-pocket-borealis.jpg);
+    background-image: url();
   }
   @media (min-width: 768px) {
     .creations-pocketborealis {
-      background-image: url(https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/desktop/image-pocket-borealis.jpg);
+      background-image: url();
     }
   }
   .creations-curiosity {
-    background-image: url(https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/mobile/image-curiosity.jpg);
+    background-image: url();
   }
   @media (min-width: 768px) {
     .creations-curiosity {
-      background-image: url(https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/desktop/image-curiosity.jpg);
+      background-image: url();
     }
   }
   .creations-makeit {
-    background-image: url(https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/mobile/image-fisheye.jpg);
+    background-image: url();
   }
   @media (min-width: 768px) {
     .creations-makeit {
-      background-image: url(https://raw.githubusercontent.com/ViktoriiaZaichuk/Frontend-Mentor-Loopstudios-landing-page/main/images/desktop/image-fisheye.jpg);
+      background-image: url();
+    }
+  }
+  /************/
+  .creations-html {
+    background-image: url(./Assets/img/html5-css3-hd.jpg);
+  }
+  @media (min-width: 768px) {
+    .creations-html {
+      background-image: url(./Assets/img/html5-css3-hd.jpg);
+    }
+  }
+  .creations-js {
+    background-image: url(./Assets/img/640px-Unofficial_JavaScript_logo_2.svg.png);
+  }
+  @media (min-width: 768px) {
+    .creations-js {
+      background-image: url(./Assets/img/640px-Unofficial_JavaScript_logo_2.svg.png);
+  }
+  }
+  .creations-node {
+    background-image: url(./Assets/img/node.png);
+  }
+  @media (min-width: 768px) {
+    .creations-node {
+      background-image: url(./Assets/img/node.png);
+    }
+  }
+  .creations-react {
+    background-image: url(./Assets/img/react.png);
+  }
+  @media (min-width: 768px) {
+    .creations-react {
+      background-image: url(./Assets/img/react.png);
+    }
+  }
+  .creations-cshirp {
+    background-image: url(./Assets/img/C-Sharp.webp);
+  }
+  @media (min-width: 768px) {
+    .creations-cshirp {
+      background-image: url(./Assets/img/C-Sharp.webp);
+    }
+  }
+  .creations-sql {
+    background-image: url(./Assets/img/sql.png);
+  }
+  @media (min-width: 768px) {
+    .creations-sql {
+      background-image: url(./Assets/img/sql.png);
+    }
+  }
+  .creations-php {
+    background-image: url(./Assets/img/PHP-logo.png);
+  }
+  @media (min-width: 768px) {
+    .creations-php {
+      background-image: url(./Assets/img/PHP-logo.png);
+    }
+  }
+  .creations-java {
+    background-image: url(./Assets/img/1200px-Java_Logo.svg.png);
+  }
+  @media (min-width: 768px) {
+    .creations-java {
+      background-image: url(./Assets/img/1200px-Java_Logo.svg.png);
     }
   }
   /**********/
@@ -727,6 +806,15 @@
     h2 {
       font-size: clamp(40px, 10vw, 60px);
     }
+    .interactive{
+      display: grid;
+      grid-template-columns: auto;
+    }
+    .interactive-img{
+      visibility: hidden;
+    }
+  }
+  @media only screen and (max-width: 700px){
     .interactive{
       display: grid;
       grid-template-columns: auto;
