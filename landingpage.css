@@ -136,7 +136,7 @@
     width: 100%;
   }
   .logoimg{
-    width: 200px;
+    width: 150px;
     height: auto;
   }
   header nav .logo {
@@ -418,7 +418,8 @@
     gap: 2rem;
     height: auto;
     width: 100%;
-    
+    justify-content: center;
+  
   }
   /* .creations > div{
     border: black 1px solid;
@@ -477,6 +478,8 @@
     transition: 0.3s;
     min-height: 20rem;
     background-position: center top;
+       width: 58%;
+    height: 82%;
   }
   .creations div::after {
     content: "";
