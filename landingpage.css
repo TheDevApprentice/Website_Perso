@@ -727,6 +727,13 @@
     h2 {
       font-size: clamp(40px, 10vw, 60px);
     }
+    .interactive{
+      display: grid;
+      grid-template-columns: auto;
+    }
+    .interactive-img{
+      visibility: hidden;
+    }
   }
   
   @media only screen and (max-width: 400px) {
@@ -737,7 +744,13 @@
     .links {
       padding-top: 30px;
     }
-    
+    .interactive{
+      display: grid;
+      grid-template-columns: auto;
+    }
+    .interactive-img{
+      visibility: hidden;
+    }
     img {
       width: 38px;
       height: 38px;
