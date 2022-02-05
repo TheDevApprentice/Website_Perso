@@ -89,12 +89,21 @@
     justify-self: end;
   }
   .attribution {
+    margin-top: 0.025rem;
     font-size: 11px;
     text-align: center;
     padding: 1rem;
+    background: rgba(0, 0, 0, 0.781);
+    color:white ;
+  }
+  .attribution:hover {
+    background: white;
+    color: black;
+    transition: 0.45s ease-out;
   }
   .attribution a {
-    color: #3e52a3;
+    color: #899be6f3;
+   
   }
   /* HEADER */
   body.open {
@@ -110,7 +119,7 @@
   }
   header {
     min-height: 100vh;
-    background-image: url("./Assets/img/high_tech_earth-wallpaper-1920x1080.jpg");
+    background-image: url("./Assets/img/wallpapersden.com_small-memory_3840x2160.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -119,7 +128,7 @@
   }
   @media (min-width: 768px) {
     header {
-      background-image: url("./Assets/img/high_tech_earth-wallpaper-1920x1080.jpg");
+      background-image: url("./Assets/img/wallpapersden.com_small-memory_3840x2160.jpg");
     }
   }
   header nav {
@@ -381,16 +390,16 @@
       text-align: left;
     }
   }
-  .interactive-txt h2 {
+  .interactive-txt h1 {
     margin-bottom: 2rem;
-    font-size: 4rem;
+    font-size: 2.3rem;
     font-weight: 500;
 
   }
   .interactive-txt p {
     color: #8c8c8c;
     max-width: 80%;
-    font-size: 1.9rem;
+    font-size: 1.2rem;
     line-height: 2.5rem;
     letter-spacing: 0.15rem;
   }
@@ -409,8 +418,11 @@
     gap: 2rem;
     height: auto;
     width: 100%;
+    
   }
-
+  /* .creations > div{
+    border: black 1px solid;
+  } */
   @media (min-width: 768px) {
     .creations {
       gap: 3rem;
@@ -846,7 +858,7 @@
   }
   /* FOOTER */
   footer {
-    margin-top: 8rem;
+    margin-top: 0.05rem;
     background-color: black;
     background: hsla(312, 66%, 76%, 1);
 
