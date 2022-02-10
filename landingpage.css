@@ -268,7 +268,7 @@
   }
   header nav .main-menu a {
     color: white;
-    font-size: 2.02rem;
+    font-size: 1.64rem;
   }
   header nav .main-menu button {
     display: inline-block;
@@ -648,12 +648,12 @@
   }
   /**********/
   #contact {
-    height: 100vh;
-    width: 100%;
+    height: 70vh;
+    max-width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-   
+   margin: 5rem 0 5rem;
   }
   #contact:hover{
       background-color: #6a9ac4;
@@ -923,10 +923,12 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#EA98DA", en
   }
   footer .footer-copyright {
     color: white;
+    align-items: center ;
   }
   @media (min-width: 768px) {
     footer .footer-copyright {
       justify-content: flex-end;
+      align-items: center ;
     }
   }
   footer .footer a {
