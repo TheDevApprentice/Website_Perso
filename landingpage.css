@@ -653,7 +653,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   margin: 5rem 0 5rem;
+    margin: 5rem 0 5rem;
   }
   #contact:hover{
       background-color: #6a9ac4;
