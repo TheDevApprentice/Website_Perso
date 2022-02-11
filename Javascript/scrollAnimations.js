@@ -1,4 +1,3 @@
-window.sr = ScrollReveal(); 
 
 var slideUp = {
     distance: '150%',
