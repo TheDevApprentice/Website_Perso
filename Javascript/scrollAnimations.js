@@ -1,3 +1,4 @@
+ScrollReveal(); 
 
 var slideUp = {
     distance: '150%',
@@ -35,7 +36,8 @@ ScrollReveal().reveal('main');
 var slideRightFooter = {
     distance: '150%',
     origin: 'left',
-    opacity: null
+    opacity: null,
+    reset: true
 };
 
 ScrollReveal().reveal('#about', { easing: 'ease-in', delay: 100});

@@ -1,4 +1,3 @@
-
 var smoothScroll = {
     speed: 0,
     delay: 10, // en ms
