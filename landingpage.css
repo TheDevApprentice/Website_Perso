@@ -648,7 +648,7 @@
   }
   /**********/
   #contact {
-    height: 70vh;
+    height: 100vh;
     max-width: 100%;
     display: flex;
     justify-content: center;
@@ -951,3 +951,8 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#EA98DA", en
     animation: underlineNav 0.2s linear forwards;
   }
   
+
+  /***/
+  html.sr .load-hidden {
+    visibility: hidden;
+}
