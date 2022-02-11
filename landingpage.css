@@ -1,10 +1,10 @@
 /* TYPOGRAPHY */
 /* COLORS */
 /* MIXINS RESPONSIVE */
-
-
-
 /* GENERAL STYLES */
+/********aNIMATIONS************/
+
+/***/
 *, *::before, *::after {
     box-sizing: inherit;
   }
@@ -259,7 +259,7 @@
   header nav .main-menu {
     display: none;
     position: relative;
-    right: -7px;
+    right: -25px;
   }
   @media (min-width: 768px) {
     header nav .main-menu {
@@ -288,7 +288,28 @@
     background-color: rgba(255, 255, 255, 0.404);
     color: white;
   }
-
+  header .hero {
+    color: white;
+    flex: 1;
+    align-content: flex-start;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  header .hero h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    border: white solid 0.2rem;
+    padding: 2rem;
+    display: inline-block;
+  }
+  @media (min-width: 768px) {
+    header .hero h1 {
+      font-size: 7rem;
+      width: auto;
+    }
+  }
   /* HOVER LINKS NAV */
   @keyframes underlineNav {
     0% {
@@ -426,10 +447,8 @@
   .interactive-txt_more p {
     color: #8c8c8c;
     max-width: 80%;
-    width: 65%;
     font-size: 1.2rem;
-    line-height: 3rem;
-    margin-top: 2.5rem;
+    line-height: 2.5rem;
     letter-spacing: 0.15rem;
   }
   @media (min-width: 768px) {
@@ -466,7 +485,7 @@
   }
   .creations h2 {
     text-transform: uppercase;
-    font-size: 2.1rem;
+    font-size: 3rem;
     text-align: center;
   }
   @media (min-width: 768px) {
