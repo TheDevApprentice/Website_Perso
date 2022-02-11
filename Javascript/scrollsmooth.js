@@ -1,9 +1,9 @@
 var smoothScroll = {
-    speed: 0,
+    speed: 0.1,
     delay: 10, // en ms
     timer: null,
     scrollSpeed: 3,
-    inertia: 0.95,
+    inertia: 0.9550,
     init: function(){
         this.setEventsListeners();
     },

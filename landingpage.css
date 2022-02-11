@@ -290,6 +290,38 @@
     background-color: rgba(255, 255, 255, 0.404);
     color: white;
   }
+
+  @keyframes animate {
+    0%,
+    100% {
+      clip-path: polygon(
+        0% 45%,
+        16% 44%,
+        33% 50%,
+        54% 60%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100%,
+        0% 100%
+      );
+    }
+  
+    50% {
+      clip-path: polygon(
+        -100% 0%,
+        -15% 65%,
+        -34% 66%,
+        -51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        100% 0%
+      );
+    }
+  }
+  
   header .hero {
     color: white;
     flex: 1;
@@ -300,17 +332,52 @@
   }
   header .hero h1 {
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 3.5rem;
     letter-spacing: 0.5rem;
     border: white solid 0.2rem;
     padding: 2rem;
     display: inline-block;
   }
+  header .hero h1 {
+    color: #fff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+  }
+ header .hero h1:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+  }
+  
+ header .hero h1:nth-child(2) {
+    color: #fff;
+    animation: animate 4s ease-in-out infinite;
+  }
+  header .hero h1:nth-child(3) {
+    color: #fff;
+    animation: animate 4s ease-in-out infinite;
+  }
+  .content {
+    height: auto;
+	position: relative;
+  top: 6rem;
+  left: 13.9rem;
+ 
+}
+
   @media (min-width: 768px) {
     header .hero h1 {
       font-size: 7rem;
       width: auto;
     }
+    
+  .content {
+    height: auto;
+	position: relative;
+  top: 5rem;
+  left: 24rem;
+ 
+}
   }
   /* HOVER LINKS NAV */
   @keyframes underlineNav {
