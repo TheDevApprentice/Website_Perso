@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="sr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=chrome">
@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./landingpage.css">
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./Javascript/scrollAnimations.js"></script>
     <title>Hugo Abric</title>
     
 </head>
@@ -39,13 +40,13 @@
         
         
         <!-- DESKTOP MENU -->
-        <div class="main-menu">
+        <div class="main-menu  ">
           <ul class="flex flex-ai-c">
-            <li class="slide-leftnav"><a href="#about">About</a></li>
-            <li class="slide-leftnav"><a href="#creations">Creations</a></li>
-            <li class="slide-leftnav"><a href="#technologies">Technologies</a></li>
-            <li class="slide-leftnav"><a href="#contact">Contact</a></li>
-            <li class="slide-leftnav"><a href="#">Support</a></li>
+            <li class="slide-leftnav load-hidden"><a href="#about">About</a></li>
+            <li class="slide-leftnav load-hidden"><a href="#creations">Creations</a></li>
+            <li class="slide-leftnav load-hidden"><a href="#technologies">Technologies</a></li>
+            <li class="slide-leftnav load-hidden"><a href="#contact">Contact</a></li>
+            <li class="slide-leftnav load-hidden"><a href="#">Support</a></li>
           </ul>
         </div>
       </nav>
@@ -57,9 +58,9 @@
     </header>
   
     <!-- MAIN -->
-    <main>
+    <main class="load-hidden ">
       <!-- INTERACTIVE  -->
-      <section id="about" class="container">
+      <section id="about" class="container load-hidden ">
         <div class="interactive">
           <div class="interactive-img">
             <img src="./Assets/img/95091606_2423560124602807_217040709104959488_n.jpg">
@@ -92,7 +93,7 @@
           </div>
         </div>
       </section>
-      <section id="more" class="container">
+      <section id="more" class="container load-hidden ">
         <div class="interactive">
           <div class="interactive-txt">
             <h1>Hugo Abric CS Student</h1>
@@ -126,7 +127,7 @@
   
       <!-- MY CREATIONS -->
      
-        <section id="creations" class="container">
+        <section id="creations" class="container load-hidden ">
           <div class="creations">
             <h2>My creations</h2>
     
@@ -185,7 +186,7 @@
       </section>
 
      
-        <section id="technologies" class="container">
+        <section id="technologies" class="container load-hidden ">
           <div class="creations">
             <h2>My technologies</h2>
 
@@ -241,7 +242,7 @@
             </div>
           </div>
      
-    <div id="contact">
+    <div id="contact ">
       <div class="contact-box">
         <div class="contact-links">
           <h2 class="h2">CONTACT</h2>
@@ -290,7 +291,7 @@
         </div>
     
         <!-- NAVIGATION -->
-        <div class="footer-navigation">
+        <div class="footer-navigation load-hidden ">
           <ul class="flex flex-ai-c flex-fd-c">
             <li><a href="#about">About</a></li>
             <li><a href="#creations">Creations</a></li>
@@ -301,7 +302,7 @@
         </div>
   
         <!-- SOCIAL -->
-        <div class="footer-social">
+        <div class="footer-social load-hidden ">
           <ul class="flex flex-ai-c flex-jc-c">
             <li><a href=""><i class="fab fa-facebook"></i></a></li>
             <li><a href=""><i class="fab fa-github"></i></a></li>
@@ -311,7 +312,7 @@
         </div>
   
         <!-- COPYRIGHT -->
-        <div class="footer-copyright flex flex-jc-c">
+        <div class="footer-copyright flex flex-jc-c load-hidden ">
           <p>© 2022 Hugo Abric. All rights reserved.</p>
         </div>
       </div>
@@ -319,7 +320,7 @@
     </footer>
   
   
-    <div class="attribution">
+    <div class="attribution load-hidden ">
       Challenged by <a href="https://github.com/Dardev12" target="_blank">Darren lambert</a>. 
       Coded by <a href="https://github.com/TheDevApprentice">Hugo Abric</a>.
     </div>
