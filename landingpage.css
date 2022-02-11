@@ -412,7 +412,7 @@
   /* OUR CREATIONS SECTION */
 
   .creations {
-    margin-top: 8rem;
+    margin-top: 12rem;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
