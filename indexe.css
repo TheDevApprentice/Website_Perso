@@ -385,15 +385,13 @@ header .hero h1:nth-child(2) {
 .interactive {
   display: grid;
   grid-template-columns: auto 90%;
-  grid-template-rows: auto 97%;
+  grid-template-rows: auto 99%;
 }
 
 .interactive_more {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: auto 97%;
-  padding: 2rem;
-  align-self: center;
+  grid-template-rows: auto 99%;
 }
 
 #more {
@@ -404,7 +402,7 @@ header .hero h1:nth-child(2) {
 .interactive-img {
   grid-row: 1/-1;
   grid-column: 1/3;
-  justify-content: center;
+  align-self: center;
   width: 30%;
 }
 .interactive-img img {
