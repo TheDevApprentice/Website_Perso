@@ -1,3 +1,16 @@
+/* TYPOGRAPHY */
+$displayFont:'Josefin Sans', sans-serif;
+$bodyTextFont: 'Alata', sans-serif;
+
+
+/* COLORS */
+$black: hsl(0, 0%, 0%);
+$white: hsl(0, 0%, 100%);
+$darkGray: hsl(0, 0%, 55%);
+$veryDarkGray: hsl(0, 0%, 41%);
+
+
+
 @keyframes animate {
 	0%,100% {
 		clip-path: polygon( 0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100% );
@@ -142,16 +155,23 @@ body.open {
 	position: fixed;
 	overflow: hidden;
 }
-#btn_darkWhite {
+.btn_darkWhite{
 	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+#btn_darkWhite_li {
 	height: 3rem;
 	width: 3rem;
-	position: relative;
-	right: -98.5rem;
 	background: transparent;
-	border: white 1px solid;
-	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
+.buttona{
+	
+}
+
 .navUpLetter {
 	font-size: rem;
 }
@@ -166,8 +186,10 @@ header {
 	display: flex;
 	flex-direction: column;
 	nav {
-		padding-top: 2rem;
+		
 		width: 100%;
+		padding: 3rem 0.5rem;
+
 		.logo {
 			position: relative;
 			z-index: 11;
@@ -768,6 +790,7 @@ footer {
 			}
 			.main-menu {
 				display: flex;
+				flex-direction: column;
 			}
 		}
 		.hero {
