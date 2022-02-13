@@ -1489,9 +1489,9 @@ footer {
 .loadingWrapper{
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-content: center;
 	height: 100vh;
-	width: 100%;
+	width: 100vw;
 	background: #000;
 	position: absolute;
 	top: 0;
