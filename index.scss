@@ -9,9 +9,50 @@ $white: hsl(0, 0%, 100%);
 $darkGray: hsl(0, 0%, 55%);
 $veryDarkGray: hsl(0, 0%, 41%);
 
+/* loading page ANIMATION  */
+#loadingWrapper{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	background: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 50000;
+}
+.wavy {
 
-/*********/
+	-webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+	
+
+  }
+  .wavy span {
+	position: relative;
+	display: inline-block;
+	color: #fff;
+	font-size: 2em;
+	text-transform: uppercase;
+	animation: animate 2.5s ease-in-out infinite;
+	animation-delay: calc(.1s * var(--i))
+  }
+  @keyframes animate {
+	0%, 100% {
+	  transform: translateY(0px);
+	}
+	20% {
+	  transform: translateY(-20px);
+	}
+	40% {
+	  transform: translateY(0px);
+	}
+  }
+/*******/
+
+
 $bg-color: #091921;
+
 
 .containerclock {
 	border-radius: 50%;
@@ -20,8 +61,9 @@ $bg-color: #091921;
 	justify-content: center;
 	align-content: center;
 	position: relative;
-	top: -12rem;
-	right: -32rem;
+
+	top: -5rem;
+	left: 27rem;
 	.pendulum {
 		position: absolute;
 		bottom: 20%;
@@ -160,49 +202,6 @@ $bg-color: #091921;
 		}
 	}
 }
-
-
-/****/
-/* loading page ANIMATION  */
-#loadingWrapper{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	width: 100%;
-	background: #000;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 50000;
-}
-.wavy {
-
-	-webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
-	
-
-  }
-  .wavy span {
-	position: relative;
-	display: inline-block;
-	color: #fff;
-	font-size: 2em;
-	text-transform: uppercase;
-	animation: animate 2.5s ease-in-out infinite;
-	animation-delay: calc(.1s * var(--i))
-  }
-  @keyframes animate {
-	0%, 100% {
-	  transform: translateY(0px);
-	}
-	20% {
-	  transform: translateY(-20px);
-	}
-	40% {
-	  transform: translateY(0px);
-	}
-  }
-/*******/
 
 /* Buttton animùation */
 .button{
@@ -831,7 +830,6 @@ header {
 			}
 		}
 	}
-	
 	nav.open {
 		.mobile-menu-active {
 			visibility: visible;
@@ -892,7 +890,7 @@ header {
 }
 .content {
 	position: relative;
-	top: 3rem;
+	top: 2.3rem;
 	left: 14rem;
 }
 main{
@@ -1034,8 +1032,8 @@ main{
 		transition: 0.3s;
 		min-height: 10rem;
 		background-position: center top;
-		width: 90%;
-		height: 70%;
+		width: 65%;
+		height: 65%;
 		margin: auto;
 		&::after {
 			content: "";
@@ -1264,7 +1262,7 @@ textarea {
 	}
 }
 footer {
-	background: url("./Assets/img/9.jfif") fade-in($color: #00000073, $amount: 0.5);
+	background: url("./Assets/img/9.jfif") fixed fade-in($color: #00000073, $amount: 0.5);
 	transition: 0.4s ease-in;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1329,35 +1327,6 @@ footer {
 	.container {
 		min-width: 1440px;
 	}
-	
-}
-
-@media(max-width : 768px){
-	.containerclock{
-		display: none;
-	}
-	.interactive-img {
-		grid-row: 1/-1;
-		grid-column: 1/3;
-		align-self: center;
-		width: 30%;
-		display: none;
-		img {
-			height: auto;
-			max-width: 100%;
-			
-		}
-	}
-}
-@media(min-width: 768px){
-
-header{
-	
-	nav{
-		.mobile-menu {
-			display: none;
-		}
-	} 
 }
 @media (min-width: 768px) {
 	
@@ -1390,11 +1359,8 @@ header{
 		justify-content: center;
 		align-items: center;
 	}
-	
 	header {
-	
 		background-image: url("./Assets/img/1.jfif");
-		
 		nav {
 			.mobile-menu {
 				display: none;
@@ -1413,7 +1379,7 @@ header{
 	}
 	.content {
 		position: relative;
-		top: 15rem;
+		top: 17rem;
 		left: 23rem;
 	}
 	.interactive {
@@ -1490,7 +1456,8 @@ header{
 		background-image: url();
 	}
 	.creations-html {
-		background-image: url("https://i.postimg.cc/MTfZFb4d/img-1-compressor.jpg");
+		background-image: url(./Assets/img/deepearth.jpg);
+	}
 	.creations-js {
 		background-image: url(./Assets/img/640px-Unofficial_JavaScript_logo_2.svg.png);
 	}
@@ -1556,8 +1523,10 @@ header{
 	}
 }
 @media only screen and (max-width: 800px) {
-	
-	
+	.containerclock{
+		display: none;
+		visibility: hidden;
+	}
 	#wrapperwrapper{
 		display: grid;
 		justify-content:center ;
@@ -1597,8 +1566,6 @@ header{
 	}
 }
 @media only screen and (max-width: 400px) {
-
-	
 	#wrapperwrapper{
 		display: grid;
 		justify-content:center ;
@@ -1674,7 +1641,6 @@ header{
 		
 	  }}
 @media (max-width: 400px) {
-	
 	.wrapper_wave {
 		display: flex;
 		justify-content: center;
@@ -1737,9 +1703,6 @@ header{
   }
 	}
 @media only screen and (max-width: 700px) {
-
-		
-	
 	.interactive {
 		display: grid;
 		grid-template-columns: auto;
@@ -1747,6 +1710,4 @@ header{
 	.interactive-img {
 		visibility: hidden;
 	}
-}
-}
 }
