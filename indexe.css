@@ -7,7 +7,7 @@
 .button {
   --offset: 10px;
   --border-size: 2px;
-  display: inline-grid;
+  display: grid;
   appearance: none;
   border: 0;
   background: transparent;
@@ -283,21 +283,6 @@ body.open {
   bottom: 0;
   position: fixed;
   overflow: hidden;
-}
-
-.btn_darkWhite {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-#btn_darkWhite_li {
-  height: 3rem;
-  width: 3rem;
-  background: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .navUpLetter {

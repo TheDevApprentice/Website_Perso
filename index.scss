@@ -18,9 +18,7 @@ $veryDarkGray: hsl(0, 0%, 41%);
 	--offset: 10px;
 	--border-size: 2px;
 	
-	display: inline-grid;
-
-  
+	display: grid;
 
 	appearance: none;
 	border: 0;
@@ -28,7 +26,7 @@ $veryDarkGray: hsl(0, 0%, 41%);
 	
 	color: #5dbbfae3;
 	text-transform: uppercase;
-	letter-spacing: .25em;
+	letter-spacing: 0.25em;
 	outline: none;
 	cursor: pointer;
 	font-weight: bold;
@@ -279,19 +277,34 @@ body.open {
 	position: fixed;
 	overflow: hidden;
 }
-.btn_darkWhite{
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-}
-#btn_darkWhite_li {
-	height: 3rem;
-	width: 3rem;
-	background: transparent;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
+// .btn_darkWhite{
+// 	display: flex;
+// 	justify-content: flex-end;
+// 	align-items: center;
+// }
+// #btn_darkWhite_li{
+// 	height: 2rem;
+// 	width: 2rem;
+// 	background: white;
+// 	border-radius: 50%;
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: center;
+
+// }
+// #btn_darkWhite_li i{
+// 	height: 2rem;
+// 	width: 2rem;
+
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: center;
+
+// 	&:hover{
+// 		scale: 10%;
+// 		animation: 0.4s ease-in;	
+// 	}
+// }
 
 .navUpLetter {
 	font-size: rem;
