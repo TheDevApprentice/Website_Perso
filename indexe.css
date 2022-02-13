@@ -1530,6 +1530,12 @@ footer .footer a:hover::after {
   }
 }
 @media only screen and (max-width: 400px) {
+  .content {
+    position: relative;
+    top: 5rem;
+    left: 14rem;
+  }
+
   #wrapperwrapper {
     display: grid;
     justify-content: center;
