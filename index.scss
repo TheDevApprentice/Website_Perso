@@ -348,6 +348,8 @@ header {
 			}
 			button {
 				display: inline-block;
+				align-items: center;
+				justify-content: center;
 				background-color: white;
 				padding: 1.5rem 2rem;
 				text-transform: uppercase;
@@ -531,16 +533,17 @@ main{
 	button {
 		background-color: white;
 		border-radius: 0%;
-	
-		padding: 0.5rem 4rem;
+		align-content: center;
+		justify-content: center;
+		padding: 0.5rem 0rem;
 		text-transform: uppercase;
 		font-family: 'Alata', sans-serif;
 		letter-spacing: 0.1rem;
 		transition: 0.3s;
 		display: inline-block;
 		cursor: pointer;
-		width: 35%;
-		height: 100%;
+		width: 30%;
+		height: 128%;
 		margin: 0 auto;
 		grid-row: 10;
 		// &:hover {
