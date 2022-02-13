@@ -48,7 +48,7 @@
   justify-content: center;
   align-content: center;
   position: relative;
-  top: -5rem;
+  top: -8rem;
   left: 27rem;
 }
 .containerclock .pendulum {
@@ -1323,7 +1323,7 @@ footer .footer a:hover::after {
 
   .content {
     position: relative;
-    top: 17rem;
+    top: 18rem;
     left: 23rem;
   }
 
@@ -1481,7 +1481,7 @@ footer .footer a:hover::after {
     width: 100%;
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
   .containerclock {
     display: none;
     visibility: hidden;

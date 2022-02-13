@@ -62,7 +62,7 @@ $bg-color: #091921;
 	align-content: center;
 	position: relative;
 
-	top: -5rem;
+	top: -8rem;
 	left: 27rem;
 	.pendulum {
 		position: absolute;
@@ -1379,7 +1379,7 @@ footer {
 	}
 	.content {
 		position: relative;
-		top: 17rem;
+		top: 18rem;
 		left: 23rem;
 	}
 	.interactive {
@@ -1522,7 +1522,7 @@ footer {
 		}
 	}
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
 	.containerclock{
 		display: none;
 		visibility: hidden;
