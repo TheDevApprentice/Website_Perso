@@ -1510,10 +1510,10 @@ footer {
 	color: #fff;
 	font-size: 2em;
 	text-transform: uppercase;
-	animation: animate 2.5s ease-in-out infinite;
+	animation: animateZ 2.5s ease-in-out infinite;
 	animation-delay: calc(.1s * var(--i))
   }
-  @keyframes animate {
+  @keyframes animateZ {
 	0%, 100% {
 	  transform: translateY(0px);
 	}
