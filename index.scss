@@ -21,7 +21,7 @@ $bg-color: #091921;
 	align-content: center;
 	position: relative;
 	top: -12rem;
-	right: 4rem;
+	right: -32rem;
 	.pendulum {
 		position: absolute;
 		bottom: 20%;
@@ -697,7 +697,7 @@ header {
 	background-position: center center;
 	display: flex;
 	flex-direction: column;
-	align-items: flex-end;
+	align-items: center;
 	justify-content: center;
 	nav {
 		
