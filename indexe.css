@@ -1294,7 +1294,6 @@ footer .footer a:hover::after {
   .interactive-img img {
     height: auto;
     max-width: 100%;
-    display: block;
   }
 }
 @media (min-width: 768px) {
