@@ -34,7 +34,7 @@ $veryDarkGray: hsl(0, 0%, 41%);
 	color: #fff;
 	font-size: 2em;
 	text-transform: uppercase;
-	animation: animate 1.5s ease-in-out infinite;
+	animation: animate 2.5s ease-in-out infinite;
 	animation-delay: calc(.1s * var(--i))
   }
   @keyframes animate {
