@@ -9,6 +9,160 @@ $white: hsl(0, 0%, 100%);
 $darkGray: hsl(0, 0%, 55%);
 $veryDarkGray: hsl(0, 0%, 41%);
 
+
+/*********/
+$bg-color: #091921;
+
+.containerclock {
+	border-radius: 50%;
+	box-shadow: 100px 100px 300px 100px rgba(0, 0, 0, 0.05);
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	position: relative;
+	top: -20rem;
+	right: 4rem;
+	.pendulum {
+		position: absolute;
+		bottom: 20%;
+		transform: translateY(100%);
+		width: 10px;
+		height: 200px;
+
+		.pendulum-hand {
+			width: 100%;
+			height: 100%;
+			background-color: #ff105e;
+			transform-origin: 0 -50%;
+			animation: pendulum 2s ease-in-out infinite;
+			transition: all 2s;
+			background-size: cover;
+			background-position: center;
+
+			&::before {
+				content: "";
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+
+			&::after {
+				content: "";
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				position: absolute;
+				background-color: #ff105e;
+				bottom: 0;
+				left: 50%;
+				transform: translate(-50%, calc(100% - 5px));
+			}
+		}
+	}
+}
+
+@keyframes pendulum {
+	0% {
+		transform: rotateZ(4deg);
+	}
+
+	50% {
+		transform: rotateZ(-4deg);
+	}
+
+	100% {
+		transform: rotateZ(4deg);
+	}
+}
+
+.clock {
+	background-image: url("https://user-images.githubusercontent.com/5783354/152565076-708e01fd-f639-4713-ab43-d4f019c8ffa7.png");
+	background-color: $bg-color;
+	background-size: cover;
+	width: 350px;
+	height: 350px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 4px solid $bg-color;
+	box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05), inset 0 -15px 15px rgba(255, 255, 255, 0.05),
+		0 15px 15px rgba(0, 0, 0, 0.3), inset 0 15px 15px rgba(0, 0, 0, 0.3);
+	z-index: 10;
+
+	&::before {
+		content: "";
+		width: 15px;
+		height: 15px;
+		background-color: #fff;
+		position: absolute;
+		border-radius: 50%;
+		z-index: 999999;
+	}
+
+	:is(.hour, .minute, .second) {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+	}
+
+	:is(.hour .hour-hand, .minute .minute-hand, .second .second-hand) {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+	}
+
+	:is(.hour .hour-hand, .minute .minute-hand, .second .second-hand)::before {
+		content: "";
+		position: absolute;
+		border-radius: 6px 6px 0 0;
+	}
+
+	.hour {
+		width: 160px;
+		height: 160px;
+
+		.hour-hand {
+			&::before {
+				width: 8px;
+				height: 80px;
+				background-color: #ff105e;
+				z-index: 10;
+			}
+		}
+	}
+
+	.minute {
+		width: 190px;
+		height: 190px;
+
+		.minute-hand {
+			width: 4px;
+			height: 90px;
+			background-color: #fff;
+			z-index: 11;
+		}
+	}
+
+	.second {
+		width: 230px;
+		height: 230px;
+
+		.second-hand {
+			width: 2px;
+			height: 150px;
+			background-color: #fff;
+			z-index: 12;
+		}
+	}
+}
+
+
+/****/
 /* loading page ANIMATION  */
 #loadingWrapper{
 	display: flex;
@@ -543,7 +697,7 @@ header {
 	background-position: center center;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-end;
 	justify-content: center;
 	nav {
 		
@@ -677,6 +831,7 @@ header {
 			}
 		}
 	}
+	
 	nav.open {
 		.mobile-menu-active {
 			visibility: visible;
@@ -737,8 +892,8 @@ header {
 }
 .content {
 	position: relative;
-	top: 2.3rem;
-	left: 14rem;
+	top: 6rem;
+	left: 16rem;
 }
 main{
 	display: grid;
@@ -879,8 +1034,8 @@ main{
 		transition: 0.3s;
 		min-height: 10rem;
 		background-position: center top;
-		width: 65%;
-		height: 65%;
+		width: 90%;
+		height: 70%;
 		margin: auto;
 		&::after {
 			content: "";
@@ -938,7 +1093,7 @@ main{
 	background-image: url();
 }
 .creations-html {
-	background-image: url(./Assets/img/html5-css3-hd.jpg);
+	background-image: url("https://i.postimg.cc/MTfZFb4d/img-1-compressor.jpg");
 }
 .creations-js {
 	background-image: url(./Assets/img/640px-Unofficial_JavaScript_logo_2.svg.png);
@@ -1109,12 +1264,16 @@ textarea {
 	}
 }
 footer {
-
-	background-color: black;
-	background: hsla(312, 66%, 76%, 1);
-	background: linear-gradient(45deg, hsla(312, 66%, 76%, 0.4) 8%, hsla(234, 93%, 67%, 1) 86%);
-	background: -moz-linear-gradient(45deg, hsla(312, 66%, 76%, 0.4) 8%, hsla(234, 93%, 67%, 1) 86%);
-	background: -webkit-linear-gradient(45deg, hsla(312, 66%, 76%, 0.4) 8%, hsla(234, 93%, 67%, 1) 86%);
+	background: url("./Assets/img/9.jfif") fade-in($color: #00000073, $amount: 0.5);
+	transition: 0.4s ease-in;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	// background-color: black;
+	// background: hsla(312, 66%, 76%, 1);
+	// background: linear-gradient(45deg, hsla(312, 66%, 76%, 0.4) 8%, hsla(234, 93%, 67%, 1) 86%);
+	// background: -moz-linear-gradient(45deg, hsla(312, 66%, 76%, 0.4) 8%, hsla(234, 93%, 67%, 1) 86%);
+	// background: -webkit-linear-gradient(45deg, hsla(312, 66%, 76%, 0.4) 8%, hsla(234, 93%, 67%, 1) 86%);
 	
 	color: white;
 	>div {
@@ -1170,6 +1329,23 @@ footer {
 	.container {
 		min-width: 1440px;
 	}
+	
+}
+
+@media(max-width : 768px){
+	.containerclock{
+		display: none;
+	}
+}
+@media(min-width: 768px){
+
+header{
+	
+	nav{
+		.mobile-menu {
+			display: none;
+		}
+	} 
 }
 @media (min-width: 768px) {
 	
@@ -1202,8 +1378,11 @@ footer {
 		justify-content: center;
 		align-items: center;
 	}
+	
 	header {
+	
 		background-image: url("./Assets/img/1.jfif");
+		
 		nav {
 			.mobile-menu {
 				display: none;
@@ -1222,7 +1401,7 @@ footer {
 	}
 	.content {
 		position: relative;
-		top: 4rem;
+		top: 21rem;
 		left: 23rem;
 	}
 	.interactive {
@@ -1275,7 +1454,7 @@ footer {
 		}
 	}
 	.creations-deepearth {
-		background-image: url();
+		background-image: url("./Assets/img/deepearth.jpg");
 	}
 	.creations-nightarcade {
 		background-image: url();
@@ -1299,8 +1478,7 @@ footer {
 		background-image: url();
 	}
 	.creations-html {
-		background-image: url(./Assets/img/html5-css3-hd.jpg);
-	}
+		background-image: url("https://i.postimg.cc/MTfZFb4d/img-1-compressor.jpg");
 	.creations-js {
 		background-image: url(./Assets/img/640px-Unofficial_JavaScript_logo_2.svg.png);
 	}
@@ -1366,6 +1544,8 @@ footer {
 	}
 }
 @media only screen and (max-width: 800px) {
+	
+	
 	#wrapperwrapper{
 		display: grid;
 		justify-content:center ;
@@ -1405,6 +1585,8 @@ footer {
 	}
 }
 @media only screen and (max-width: 400px) {
+
+	
 	#wrapperwrapper{
 		display: grid;
 		justify-content:center ;
@@ -1480,6 +1662,7 @@ footer {
 		
 	  }}
 @media (max-width: 400px) {
+	
 	.wrapper_wave {
 		display: flex;
 		justify-content: center;
@@ -1542,6 +1725,9 @@ footer {
   }
 	}
 @media only screen and (max-width: 700px) {
+
+		
+	
 	.interactive {
 		display: grid;
 		grid-template-columns: auto;
@@ -1549,4 +1735,6 @@ footer {
 	.interactive-img {
 		visibility: hidden;
 	}
+}
+}
 }

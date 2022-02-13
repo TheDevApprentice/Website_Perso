@@ -1,6 +1,137 @@
 @charset "UTF-8";
 /* TYPOGRAPHY */
 /* COLORS */
+/*********/
+.containerclock {
+  border-radius: 50%;
+  box-shadow: 100px 100px 300px 100px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  top: -20rem;
+  right: 4rem;
+}
+.containerclock .pendulum {
+  position: absolute;
+  bottom: 20%;
+  transform: translateY(100%);
+  width: 10px;
+  height: 200px;
+}
+.containerclock .pendulum .pendulum-hand {
+  width: 100%;
+  height: 100%;
+  background-color: #ff105e;
+  transform-origin: 0 -50%;
+  animation: pendulum 2s ease-in-out infinite;
+  transition: all 2s;
+  background-size: cover;
+  background-position: center;
+}
+.containerclock .pendulum .pendulum-hand::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.containerclock .pendulum .pendulum-hand::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #ff105e;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, calc(100% - 5px));
+}
+
+@keyframes pendulum {
+  0% {
+    transform: rotateZ(4deg);
+  }
+  50% {
+    transform: rotateZ(-4deg);
+  }
+  100% {
+    transform: rotateZ(4deg);
+  }
+}
+.clock {
+  background-image: url("https://user-images.githubusercontent.com/5783354/152565076-708e01fd-f639-4713-ab43-d4f019c8ffa7.png");
+  background-color: #091921;
+  background-size: cover;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #091921;
+  box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05), inset 0 -15px 15px rgba(255, 255, 255, 0.05), 0 15px 15px rgba(0, 0, 0, 0.3), inset 0 15px 15px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.clock::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 999999;
+}
+.clock :is(.hour, .minute, .second) {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+.clock :is(.hour .hour-hand, .minute .minute-hand, .second .second-hand) {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.clock :is(.hour .hour-hand, .minute .minute-hand, .second .second-hand)::before {
+  content: "";
+  position: absolute;
+  border-radius: 6px 6px 0 0;
+}
+.clock .hour {
+  width: 160px;
+  height: 160px;
+}
+.clock .hour .hour-hand::before {
+  width: 8px;
+  height: 80px;
+  background-color: #ff105e;
+  z-index: 10;
+}
+.clock .minute {
+  width: 190px;
+  height: 190px;
+}
+.clock .minute .minute-hand {
+  width: 4px;
+  height: 90px;
+  background-color: #fff;
+  z-index: 11;
+}
+.clock .second {
+  width: 230px;
+  height: 230px;
+}
+.clock .second .second-hand {
+  width: 2px;
+  height: 150px;
+  background-color: #fff;
+  z-index: 12;
+}
+
+/****/
 /* loading page ANIMATION  */
 #loadingWrapper {
   display: flex;
@@ -514,7 +645,7 @@ header {
   background-position: center center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 }
 header nav {
@@ -695,8 +826,8 @@ header .hero h1:nth-child(2) {
 
 .content {
   position: relative;
-  top: 2.3rem;
-  left: 14rem;
+  top: 6rem;
+  left: 16rem;
 }
 
 main {
@@ -840,8 +971,8 @@ main {
   transition: 0.3s;
   min-height: 10rem;
   background-position: center top;
-  width: 65%;
-  height: 65%;
+  width: 90%;
+  height: 70%;
   margin: auto;
 }
 .creations div::after {
@@ -905,7 +1036,7 @@ main {
 }
 
 .creations-html {
-  background-image: url(./Assets/img/html5-css3-hd.jpg);
+  background-image: url("https://i.postimg.cc/MTfZFb4d/img-1-compressor.jpg");
 }
 
 .creations-js {
@@ -1096,11 +1227,11 @@ textarea:valid + label {
 }
 
 footer {
-  background-color: black;
-  background: #ea99da;
-  background: linear-gradient(45deg, rgba(234, 153, 218, 0.4) 8%, #5d6cf9 86%);
-  background: -moz-linear-gradient(45deg, rgba(234, 153, 218, 0.4) 8%, #5d6cf9 86%);
-  background: -webkit-linear-gradient(45deg, rgba(234, 153, 218, 0.4) 8%, #5d6cf9 86%);
+  background: url("./Assets/img/9.jfif") rgba(0, 0, 0, 0.9509803922);
+  transition: 0.4s ease-in;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   color: white;
 }
 footer > div {
@@ -1148,7 +1279,17 @@ footer .footer a:hover::after {
     min-width: 1440px;
   }
 }
+@media (max-width: 768px) {
+  .containerclock {
+    display: none;
+  }
+}
 @media (min-width: 768px) {
+  header nav .mobile-menu {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
   .wrapper_wave {
     display: flex;
     justify-content: center;
@@ -1194,7 +1335,7 @@ footer .footer a:hover::after {
 
   .content {
     position: relative;
-    top: 4rem;
+    top: 21rem;
     left: 23rem;
   }
 
@@ -1252,7 +1393,7 @@ footer .footer a:hover::after {
   }
 
   .creations-deepearth {
-    background-image: url();
+    background-image: url("./Assets/img/deepearth.jpg");
   }
 
   .creations-nightarcade {
@@ -1284,64 +1425,56 @@ footer .footer a:hover::after {
   }
 
   .creations-html {
-    background-image: url(./Assets/img/html5-css3-hd.jpg);
+    background-image: url("https://i.postimg.cc/MTfZFb4d/img-1-compressor.jpg");
   }
-
-  .creations-js {
+  .creations-html .creations-js {
     background-image: url(./Assets/img/640px-Unofficial_JavaScript_logo_2.svg.png);
   }
-
-  .creations-node {
+  .creations-html .creations-node {
     background-image: url(./Assets/img/node.png);
   }
-
-  .creations-react {
+  .creations-html .creations-react {
     background-image: url(./Assets/img/react.png);
   }
-
-  .creations-cshirp {
+  .creations-html .creations-cshirp {
     background-image: url(./Assets/img/C-Sharp.webp);
   }
-
-  .creations-sql {
+  .creations-html .creations-sql {
     background-image: url(./Assets/img/sql.png);
   }
-
-  .creations-php {
+  .creations-html .creations-php {
     background-image: url(./Assets/img/PHP-logo.png);
   }
-
-  .creations-java {
+  .creations-html .creations-java {
     background-image: url(./Assets/img/1200px-Java_Logo.svg.png);
   }
-
-  footer > div {
+  .creations-html footer > div {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
-  footer .footer-navigation {
+  .creations-html footer .footer-navigation {
     grid-row: 2/span 1;
     grid-column: 1/span 1;
   }
-  footer .footer-navigation ul {
+  .creations-html footer .footer-navigation ul {
     flex-direction: row;
   }
-  footer .footer-navigation ul:first-child a {
+  .creations-html footer .footer-navigation ul:first-child a {
     margin: 1rem 1rem 1rem 0;
   }
-  footer .footer-logo {
+  .creations-html footer .footer-logo {
     justify-content: flex-start;
   }
-  footer .footer-social {
+  .creations-html footer .footer-social {
     display: flex;
     justify-content: flex-end;
   }
-  footer .footer-copyright {
+  .creations-html footer .footer-copyright {
     justify-content: flex-end;
     align-items: center;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 768px) and (min-width: 768px) and (min-width: 800px) {
   .creations button {
     justify-self: center;
     width: 70%;
@@ -1352,7 +1485,7 @@ footer .footer a:hover::after {
     width: 100%;
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 768px) and (min-width: 768px) and (max-width: 800px) {
   #wrapperwrapper {
     display: grid;
     justify-content: center;
@@ -1395,7 +1528,7 @@ footer .footer a:hover::after {
     visibility: hidden;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 768px) and (min-width: 768px) and (max-width: 400px) {
   #wrapperwrapper {
     display: grid;
     justify-content: center;
@@ -1451,7 +1584,7 @@ footer .footer a:hover::after {
     height: 38px;
   }
 }
-@media (min-width: 400px) {
+@media (min-width: 768px) and (min-width: 768px) and (min-width: 400px) {
   .wrapper_wave {
     display: flex;
     justify-content: center;
@@ -1472,7 +1605,7 @@ footer .footer a:hover::after {
     border-radius: 50%;
   }
 }
-@media (max-width: 400px) {
+@media (min-width: 768px) and (min-width: 768px) and (max-width: 400px) {
   .wrapper_wave {
     display: flex;
     justify-content: center;
@@ -1532,7 +1665,7 @@ footer .footer a:hover::after {
     }
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (min-width: 768px) and (min-width: 768px) and (max-width: 700px) {
   .interactive {
     display: grid;
     grid-template-columns: auto;
