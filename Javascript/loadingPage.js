@@ -1,7 +1,7 @@
 $(window).on("load", function() {
     $("#loadingWrapper").fadeOut(function() {
         // fadeOut complete. Remove the loading div
-        setTimeout(removeLoader, 2500); //wait for page load PLUS two seconds.
+        setTimeout(removeLoader, 5500); //wait for page load PLUS two seconds.
     });
 }); 
 function removeLoader(){
