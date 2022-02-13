@@ -2,7 +2,7 @@
 /* TYPOGRAPHY */
 /* COLORS */
 /* loading page ANIMATION  */
-.loadingWrapper {
+#loadingWrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1479,7 +1479,7 @@ footer .footer a:hover::after {
     border-radius: 50%;
   }
 
-  .loadingWrapper {
+  #loadingWrapper {
     display: flex;
     justify-content: center;
     align-content: center;

@@ -10,7 +10,7 @@ $darkGray: hsl(0, 0%, 55%);
 $veryDarkGray: hsl(0, 0%, 41%);
 
 /* loading page ANIMATION  */
-.loadingWrapper{
+#loadingWrapper{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1486,7 +1486,7 @@ footer {
 		
 	  }
 	  
-.loadingWrapper{
+#loadingWrapper{
 	display: flex;
 	justify-content: center;
 	align-content: center;
