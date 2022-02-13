@@ -58,13 +58,13 @@ var slideRightFooter = {
     reset: true
 };
 
-ScrollReveal().reveal('#about', { easing: 'ease-in', delay: 100});
-ScrollReveal().reveal('#creations',{ delay: 500});
-ScrollReveal().reveal('#technologies',{ delay: 500});
-ScrollReveal().reveal('#more',{ delay: 500});
-ScrollReveal().reveal('#contact',{ delay: 500});
-ScrollReveal().reveal('.section_animation',{ delay: 400, Duration: 500});
-ScrollReveal().reveal('.wave',{ delay: 550,  Duration: 500});
+ScrollReveal().reveal('#about', {  reset: true, easing: 'ease-in', delay: 100});
+ScrollReveal().reveal('#creations',{  reset: true, easing: 'ease-in', delay: 500});
+ScrollReveal().reveal('#technologies',{  reset: true,easing: 'ease-in', delay: 500});
+ScrollReveal().reveal('#more',{  reset: true,easing: 'ease-in', delay: 500});
+ScrollReveal().reveal('#contact',{  reset: true,easing: 'ease-in', delay: 500});
+ScrollReveal().reveal('.section_animation',{  reset: true,easing: 'ease-in', delay: 550, Duration: 500});
+ScrollReveal().reveal('#wrapperwrapper',{  reset: true,easing: 'ease-in', delay: 750,  Duration: 500});
 
-ScrollReveal().reveal('.footer-copyright, .footer-navigation, .footer-social',slideDown,{easing:'ease', delay : 600 });
-ScrollReveal().reveal('.attribution', { delay : 500 });
+ScrollReveal().reveal('.footer-copyright, .footer-navigation, .footer-social',slideDown,{ reset: true,easing:'ease', delay : 600 });
+ScrollReveal().reveal('.attribution', { reset: true,easing: 'ease-in', delay : 500 });
