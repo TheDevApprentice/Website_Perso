@@ -963,9 +963,10 @@ main{
 }
 #contact {
 	background: fixed;
-	background-image: url("./Assets/img/1.jfif");
+	background-image: url("./Assets/img/2.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center center;
 	height: 100vh;
 	max-width: 100vw;
 	display: flex;
@@ -1425,10 +1426,10 @@ footer {
 	}
 	#contact{
 		background: fixed;
-	background-image: url("./Assets/img/1.jfif");
+	background-image: url("./Assets/img/2.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: bottom bottom;
+	background-position: center center;
 	
 		
 		
