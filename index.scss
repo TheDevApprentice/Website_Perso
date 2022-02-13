@@ -1324,6 +1324,25 @@ footer {
 	}
 }
 @media only screen and (max-width: 800px) {
+	#wrapperwrapper{
+		display: grid;
+		justify-content:center ;
+		align-content: center;
+		
+		height: 100%;
+	
+	}
+	.section_animation{
+		margin-top: 10rem;
+	   height: 50rem;
+		justify-self: center;
+	   position: relative;
+	   left: 0rem;
+		background: #3586ff;
+		overflow: hidden;
+		z-index: 20;
+		width: 100%;
+	}
 	.contact-links {
 		width: 100%;
 		border-radius: 10px 10px 0 0;
