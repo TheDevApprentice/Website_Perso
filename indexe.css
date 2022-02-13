@@ -1,7 +1,40 @@
 @charset "UTF-8";
 /* TYPOGRAPHY */
 /* COLORS */
-/* BORDER ANIMATION  */
+/* loading page ANIMATION  */
+.wavy {
+  position: absolute;
+  -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: #000;
+  z-index: 5000;
+}
+
+.wavy span {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+  animation: animate 1.5s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+}
 /*******/
 /* Buttton animùation */
 .button {
