@@ -316,6 +316,9 @@ header {
 		.logo {
 			position: relative;
 			z-index: 11;
+			border-radius: 50%;
+			height: 150px;
+			margin: 0.3rem;
 		}
 		li {
 			a {
@@ -489,8 +492,11 @@ header {
 	}
 }
 .logoimg {
-	width: 150px;
-	height: auto;
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	background: transparent;
+	
 }
 .content {
 	position: relative;

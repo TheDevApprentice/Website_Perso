@@ -324,6 +324,9 @@ header nav {
 header nav .logo {
   position: relative;
   z-index: 11;
+  border-radius: 50%;
+  height: 150px;
+  margin: 0.3rem;
 }
 header nav li a {
   position: relative;
@@ -484,8 +487,10 @@ header .hero h1:nth-child(2) {
 }
 
 .logoimg {
-  width: 150px;
-  height: auto;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: transparent;
 }
 
 .content {
