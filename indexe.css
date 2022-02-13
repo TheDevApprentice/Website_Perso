@@ -1230,6 +1230,7 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  margin-top: -5rem;
   color: white;
 }
 footer > div {
