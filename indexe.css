@@ -118,6 +118,74 @@
   }
 }
 /******/
+/* background animated */
+:root {
+  --shadowShift: 6px;
+  --shadowBlur: 15px;
+  --circleColor: rgb(241, 243, 246);
+}
+
+.wrapper_wave {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  min-height: 86vh;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, #fafafa00 0%, #d8d8d800 100%);
+}
+
+.wave__container {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  right: 0rem;
+  bottom: 0rem;
+  justify-content: center;
+  align-content: center;
+  border-radius: 50%;
+}
+
+.wave__circle {
+  position: absolute;
+  background-color: transparent;
+  border: 10px solid var(--circleColor);
+  border-radius: 50%;
+  box-shadow: inset var(--shadowShift) var(--shadowShift) var(--shadowBlur) rgba(55, 84, 170, 0.2), var(--shadowShift) var(--shadowShift) var(--shadowBlur) rgba(55, 84, 170, 0.2), inset calc(var(--shadowShift) * -1) calc(var(--shadowShift) * -1) var(--shadowBlur) white, calc(var(--shadowShift) * -1) calc(var(--shadowShift) * -1) var(--shadowBlur) white;
+  filter: blur(3px);
+  animation-name: ripple;
+  animation-duration: 3s;
+  animation-timing-function: cubic-bezier(0, 0.2, 0.8, 1);
+  animation-iteration-count: infinite;
+  justify-self: center;
+  align-self: center;
+}
+
+.wave__container .wave__circle:nth-child(2) {
+  animation-delay: -1s;
+}
+
+.wave__container .wave__circle:nth-child(3) {
+  animation-delay: -2s;
+}
+
+@keyframes ripple {
+  0% {
+    top: 250px;
+    left: 250px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+  }
+}
+/********/
 @keyframes animateP {
   0%, 100% {
     clip-path: polygon(0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
@@ -929,6 +997,26 @@ footer .footer a:hover::after {
   }
 }
 @media (min-width: 768px) {
+  .wrapper_wave {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    min-height: 86vh;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #fafafa00 0%, #d8d8d800 100%);
+  }
+  .wrapper_wave .wave__container {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    justify-content: center;
+    align-content: center;
+    border-radius: 50%;
+  }
+
   .img_renomer {
     background-image: url("./Assets/img/1.jfif");
     width: 100%;
@@ -1162,6 +1250,48 @@ footer .footer a:hover::after {
   img {
     width: 38px;
     height: 38px;
+  }
+}
+@media (min-width: 400px) {
+  .wrapper_wave {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    min-height: 86vh;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #fafafa00 0%, #d8d8d800 100%);
+  }
+  .wrapper_wave .wave__container {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 41%;
+    left: 32%;
+    justify-content: center;
+    align-content: center;
+    border-radius: 50%;
+  }
+}
+@media (max-width: 400px) {
+  .wrapper_wave {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    min-height: 86vh;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #fafafa00 0%, #d8d8d800 100%);
+  }
+  .wrapper_wave .wave__container {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 18%;
+    left: -27%;
+    justify-content: center;
+    align-content: center;
+    border-radius: 50%;
   }
 }
 @media only screen and (max-width: 700px) {
