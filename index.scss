@@ -18,8 +18,7 @@ $veryDarkGray: hsl(0, 0%, 41%);
   
   .Stars {
 	--percent: calc(var(--rating) / 5 * 100%);
-	
-	display: inline-block;
+
 	font-size: var(--star-size);
 	font-family: Times; // make sure ★ appears correctly
 	line-height: 5;
