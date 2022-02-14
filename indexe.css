@@ -1,6 +1,28 @@
 @charset "UTF-8";
 /* TYPOGRAPHY */
 /* COLORS */
+/********************/
+#page {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: no-wrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#page div {
+  flex: 0 0 100vw;
+  height: 100vh;
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+/*******/
 /*   */
 :root {
   --star-size: 60px;
@@ -951,7 +973,7 @@ main {
   letter-spacing: 0.15rem;
 }
 
-.technologie {
+.technologies {
   height: 100%;
   margin-top: -8rem;
 }

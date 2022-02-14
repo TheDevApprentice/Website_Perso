@@ -9,6 +9,29 @@ $white: hsl(0, 0%, 100%);
 $darkGray: hsl(0, 0%, 55%);
 $veryDarkGray: hsl(0, 0%, 41%);
 
+/********************/
+#page {
+	overflow:hidden;
+	white-space: nowrap;
+	display: flex;
+	flex-wrap: no-wrap;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	div {
+		flex: 0 0 100vw;
+		height: 100vh;
+		position: relative;
+		align-items: center;
+		display: flex;
+		justify-content: center;
+	}
+
+}
+/*******/
+
 /*   */
 :root {
 	--star-size: 60px;
@@ -1013,7 +1036,7 @@ main{
 		letter-spacing: 0.15rem;
 	}
 }
-.technologie{
+.technologies{
 	height: 100%;
 	margin-top: -8rem;
 }
