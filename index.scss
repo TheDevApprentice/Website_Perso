@@ -9,6 +9,36 @@ $white: hsl(0, 0%, 100%);
 $darkGray: hsl(0, 0%, 55%);
 $veryDarkGray: hsl(0, 0%, 41%);
 
+/*   */
+:root {
+	--star-size: 60px;
+	--star-color: #fff;
+	--star-background: #fc0;
+  }
+  
+  .Stars {
+	--percent: calc(var(--rating) / 5 * 100%);
+	
+	display: inline-block;
+	font-size: var(--star-size);
+	font-family: Times; // make sure ★ appears correctly
+	line-height: 5;
+	position: relative;
+	top: -9rem;
+	left: 1rem;
+	visibility: hidden;
+	&::before {
+	  content: '★★★★★';
+	  letter-spacing: 3px;
+	  background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	}
+  }
+  
+  // Just to make a preview more beautifull
+
+/**********/
 /* loading page ANIMATION  */
 #loadingWrapper{
 	display: flex;
@@ -1032,8 +1062,8 @@ main{
 		transition: 0.3s;
 		min-height: 10rem;
 		background-position: center top;
-		width: 65%;
-		height: 65%;
+		width: 86%;
+		height: 80%;
 		margin: auto;
 		&::after {
 			content: "";
@@ -1110,6 +1140,8 @@ main{
 }
 .creations-php {
 	background-image: url(./Assets/img/PHP-logo.png);
+	justify-content: center;
+	align-content: center;
 }
 .creations-java {
 	background-image: url(./Assets/img/1200px-Java_Logo.svg.png);
