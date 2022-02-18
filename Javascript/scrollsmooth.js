@@ -18,7 +18,7 @@ var smoothScroll = {
     	if(this.timer == null){
     		this.timer = setTimeout(this.smoothScroll, this.delay, this); 
     	}
-    	e.preventDefault();
+    	// e.preventDefault();
     },
     smoothScroll: function(scope){
 		var self = scope;
