@@ -1387,6 +1387,13 @@ footer .footer a:hover::after {
     align-items: center;
   }
 
+  /* .interactive-img {
+  // 	justify-content: flex-start;
+  // 	align-items: flex-end;
+  // 	img {
+  // 		width: auto;
+  // 	}
+  // }*/
   .interactive-txt {
     justify-content: flex-end;
     align-items: center;
