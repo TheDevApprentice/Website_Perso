@@ -898,6 +898,8 @@ main {
 
 .interactive {
   display: grid;
+  /* grid-template-columns: auto 90%;
+   grid-template-rows: auto 99%;*/
   margin: 2% 2%;
 }
 
