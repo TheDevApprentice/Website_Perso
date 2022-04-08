@@ -1,6 +1,4 @@
-@charset "UTF-8";
-/* TYPOGRAPHY */
-/* COLORS */
+
 /*weather App*/
 .bk-black {
   color: black;
@@ -30,7 +28,7 @@
 }
 
 /*******/
-/*   */
+
 :root {
   --star-size: 60px;
   --star-color: #fff;
@@ -56,7 +54,6 @@
   -webkit-text-fill-color: transparent;
 }
 
-/**********/
 /* loading page ANIMATION  */
 #loadingWrapper {
   display: flex;
