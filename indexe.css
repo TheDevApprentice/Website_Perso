@@ -2,6 +2,11 @@
 /* TYPOGRAPHY */
 /* COLORS */
 /*weather App*/
+.bk-black {
+  color: black;
+  background-color: rgba(0, 0, 0, 0.952);
+}
+
 /***/
 /********************/
 #page {
@@ -604,8 +609,8 @@ p {
 }
 
 .container {
-  max-width: 95%;
-  margin: 0 35px;
+  max-width: 87%;
+  margin: -15px 43px;
 }
 
 .containerTxt {
@@ -877,8 +882,8 @@ header .hero h1:nth-child(2) {
 
 .content {
   position: relative;
-  top: 2.3rem;
-  left: 14rem;
+  top: 0.3rem;
+  left: 15rem;
 }
 
 main {
@@ -1042,39 +1047,39 @@ main #about .interactive .interactive-txt p {
 }
 
 .creations-deepearth {
-  background-image: url();
+  background-image: url(./Assets/img/Cloudware.jpg);
 }
 
 .creations-nightarcade {
-  background-image: url();
+  background-image: url(./Assets/img/Cloudware.jpg);
 }
 
 .creations-soccerteam {
-  background-image: url();
+  background-image: url(./Assets/img/Cloudware.jpg);
 }
 
 .creations-thegrid {
-  background-image: url();
+  background-image: url(./Assets/img/Cloudware.jpg);
 }
 
 .creations-fromup {
-  background-image: url();
+  background-image: url(./Assets/img/Cloudware.jpg);
 }
 
 .creations-pocketborealis {
-  background-image: url();
+  background-image: url(./Assets/img/Cloudware.jpg);
 }
 
 .creations-curiosity {
-  background-image: url();
+  background-image: url(./Assets/img/Cloudware.jpg);
 }
 
 .creations-makeit {
-  background-image: url();
+  background-image: url(./Assets/img/Cloudware.jpg);
 }
 
 .creations-html {
-  background-image: url("https://i.postimg.cc/MTfZFb4d/img-1-compressor.jpg");
+  background-image: url(https://i.postimg.cc/MTfZFb4d/img-1-compressor.jpg);
 }
 
 .creations-js {
@@ -1321,6 +1326,19 @@ footer .footer a:hover::after {
   }
 }
 @media (min-width: 768px) {
+  .container-button {
+    position: relative;
+    left: -45.5rem;
+    top: -20rem;
+  }
+  .container-button #buttons {
+    font-size: 2.25rem;
+  }
+  .container-button :hover {
+    transform: rotate(360deg);
+    transition: 0.5s ease-out;
+  }
+
   .wrapper_wave {
     display: flex;
     justify-content: center;
@@ -1366,7 +1384,7 @@ footer .footer a:hover::after {
 
   .content {
     position: relative;
-    top: 18rem;
+    top: 13rem;
     left: 23rem;
   }
 
@@ -1425,35 +1443,35 @@ footer .footer a:hover::after {
   }
 
   .creations-deepearth {
-    background-image: url("./Assets/img/deepearth.jpg");
+    background-image: url(./Assets/img/deepearth.jpg);
   }
 
   .creations-nightarcade {
-    background-image: url();
+    background-image: url(./Assets/img/Cloudware.jpg);
   }
 
   .creations-soccerteam {
-    background-image: url();
+    background-image: url(./Assets/img/Cloudware.jpg);
   }
 
   .creations-thegrid {
-    background-image: url();
+    background-image: url(./Assets/img/Cloudware.jpg);
   }
 
   .creations-fromup {
-    background-image: url();
+    background-image: url(./Assets/img/Cloudware.jpg);
   }
 
   .creations-pocketborealis {
-    background-image: url();
+    background-image: url(./Assets/img/Cloudware.jpg);
   }
 
   .creations-curiosity {
-    background-image: url();
+    background-image: url(./Assets/img/Cloudware.jpg);
   }
 
   .creations-makeit {
-    background-image: url();
+    background-image: url(./Assets/img/Cloudware.jpg);
   }
 
   .creations-html {
