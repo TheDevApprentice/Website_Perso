@@ -183,6 +183,12 @@ const animate = () => {
   requestAnimationFrame(animate);
   render();
 };
+// const rotate = () =>{
+    
+//     for(var i = 1; i > timer.seconds; i++){
+        
+//     }
+// }
 
 const resize = () => {
   renderer.setSize(window.innerWidth, window.innerHeight);
@@ -200,6 +206,7 @@ document.getElementById('btn_transform').addEventListener('click',()=>{
   if(currentGeometry === 'cube'){
     currentGeometry ='sphere';
     transformAnimation(initialCubeGeometry,initialSphereGeometry,meshName,scene,isMobile);
+    // rotate(); 
   }
   else if(currentGeometry === 'sphere'){
     currentGeometry = 'cube';
